@@ -27,7 +27,7 @@ storiesOf('Button', module)
   .add('BaseButton', () => ({
     components: { BaseButton },
     template: '<BaseButton @click="action">BaseButton</BaseButton>',
-    methods: { action: action('clicked') },
+    methods: { action: action('click') },
   }))
   .add('with JSX', () => ({
     components: { MyButton },
