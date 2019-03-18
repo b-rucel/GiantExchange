@@ -5,9 +5,11 @@
 <script>
   export default {
     name: "BaseButton",
-    onClick() {
-      this.$emit('click');
-    }
+    methods: {
+      onClick() {
+        this.$emit('click');
+      },
+    },
   }
 </script>
 
