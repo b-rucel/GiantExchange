@@ -1,20 +1,23 @@
 <template>
-  <b-button class="style-custom" @click="onClick"><slot></slot></b-button>
+  <b-button class="style-custom" @click="onClick">
+    <slot></slot>
+  </b-button>
 </template>
 
 <script>
-  export default {
-    name: "BaseButton",
-    methods: {
-      onClick() {
-        this.$emit('click');
-      },
+export default {
+  name: 'BaseButton',
+  methods: {
+    onClick() {
+      this.$emit('click');
     },
-  }
+  },
+}
 </script>
 
-<style leng="scss" scoped>
+<style lang="scss" scoped>
   .style-custom {
 
   }
 </style>
+
