@@ -7,7 +7,8 @@ import { storiesOf } from '@storybook/vue';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import 'bootstrap/dist/css/bootstrap.css';
+import '../src/styles/custom-bootstrap.scss';
+import 'bootstrap/scss/bootstrap.scss';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import Welcome from './Welcome';
@@ -23,5 +24,5 @@ storiesOf('Button', module)
   .add('BaseButton', () => ({
     components: { BaseButton },
     template: '<BaseButton @click="action">BaseButton</BaseButton>',
-    methods: { action: action('click') },
+    methods: { action: action('onClick') },
   }));

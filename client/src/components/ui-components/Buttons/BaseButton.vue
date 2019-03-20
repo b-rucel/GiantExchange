@@ -2,7 +2,8 @@
   <b-button class="style-custom"
             @click="onClick"
             :disabled="disabled"
-            :type="type">
+            :type="type"
+            :variant="variant">
     <slot/>
   </b-button>
 </template>
@@ -13,12 +14,19 @@ export default {
   props: {
     onClick: {
       type: Function,
+      default: () => console.log('click-click'),
     },
     disabled: {
       type: Boolean,
+      default: false,
     },
     type: {
       type: String,
+      default: 'Button',
+    },
+    variant: {
+      type: String,
+      default: 'danger',
     },
   },
 };
