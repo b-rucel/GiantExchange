@@ -34,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
   .style-custom {
-    background-color: #FD2B2B;
   }
 </style>
 
